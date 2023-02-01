@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Calibri;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #66ff66 0%, #009900 100%);
+            color: white;
+        }
+
+
+        .instructions {
+            float: right;
+            padding: 20px;
+            font-size: 15px;
+            border: 3px solid #1a1a1a;
+            background-color: #fff;
+            font-family: Calibri;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 1px 0;
+            text-align: center;
+            background: #1a1a1a;
+            color: white;
+            position: inherit;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .collectionInfo {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .display {
+            padding: 20px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        tr {
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+            tr:hover {
+                background-color: #D6EEEE;
+            }
+
+        th {
+            text-align: center;
+        }
+
+        .summary {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Gourmet Guru Catering Buy Form</h1>
+    </div>
+
+    <div class="instructions">
+        To use this form:<br><br>
+        1. Fill out your information.<br><br>
+        2. Choose delivery date and preferred delivery time.<br><br>
+        3. Enter the number of guests for your event.<br><br>
+    </div>
+
+    <div class="collectionInfo">
+        <label for="fname">First name:</label>
+
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name:</label>
+
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="address">Address:</label>
+
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="suburb">Suburb:</label>
+
+        <input type="text" id="suburb" name="suburb"><br><br>
+
+        <label for="email">Email:</label>
+
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="phone">Phone number:</label>
+
+        <input type="text" id="phone" name="phone"><br>
+        <br>
+        <label for="dateDelivery">Choose delivery date:</label>
+
+        <input type="date" id="dateDelivery" name="dateDelivery"><br><br>
+
+        <label for="timeDelivery">Select a preferred time for delivery:</label>
+
+        <input type="time" id="timeDelivery" name="timeDelivery">
+    </div>
+
+    <div class="display">
+        <p style="color: red"><b>Choose up to 12 different items. A minimum of 20 pieces per item applies (except when noted).</b></p>
+        <p>
+            <script>
+                function addCalculation (arg1, arg2, arg3, arg4, arg5) {
+                    let cat = arg1;
+                    let dog = arg2;
+                    document.getElementById(arg3).innerHTML = cat*dog;
+
+                    let indivCost = arg4;
+                    let n = (cat*indivCost).toFixed(2);
+                    document.getElementById(arg5).innerHTML = "$ " + n;
+                }
+            </script>
+        </p>
+        <table style="width: 100%">
+            <tr>
+                <th>Item Names</th>
+                <th style="width: 100px">Cost Per Piece</th>
+                <th style="width: 100px">Amount Required</th>
+                <th style="width: 100px">Total Bites</th>
+                <th style="width: 100px">Total Cost</th>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Gourmet Bao Buns</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td id="Ord1">Gourmet Bao - Karaage Crispy Chicken with Asian Slaw & Sweet Mayo Drizzle</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item1" name="Item1" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addCalc1(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite1" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addCalc1() {
+                            var ItemCode = parseInt(document.getElementById("Item1").value);
+                            const record = new addCalculation(ItemCode, "2", "bite1", "7.50", "calc1");
+                        }
+                    </script>
+                </td>
+                <td id="calc1" style="text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord2">Gourmet Bao - Peking Duck with Spring Onion, Cucumber & Plum Sauce</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item2" name="Item2" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addCalc2(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite2" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addCalc2() {
+                            var ItemCode = parseInt(document.getElementById("Item2").value);
+                            const record = new addCalculation(ItemCode, "2", "bite2", "7.50", "calc2");
+                        }
+                    </script>
+                </td>
+                <td id="calc2" style="text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord3">Gourmet Bao - Tempura Prawn with Asian Slaw & Wasabi Mayo</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item3" name="Item3" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addCalc3(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite3" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addCalc3() {
+                            var ItemCode = parseInt(document.getElementById("Item3").value);
+                            const record = new addCalculation(ItemCode, "2", "bite3", "7.50", "calc3");
+                        }
+                    </script>
+                </td>
+                <td id="calc3" style="text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord4">Gourmet Bao - Marinated Tofu with Asian Slaw & Plum Sauce (VEGAN)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item4" name="Item4" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite4(); addCost4(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite4" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite4() {
+                            var ID1 = parseInt(document.getElementById("Item4").value);
+                            var bite = 2;
+                            document.getElementById("bite4").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc4" style="text-align: center">
+                    <script>
+                        function addCost4() {
+                            var ID1 = parseFloat(document.getElementById("Item4").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc4").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Gourmet Brioche Sliders</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td id="Ord5">Gourmet Brioche Slider - Smoky Tennessee Bourbon Pulled Pork with Creamy Slaw</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item5" name="Item5" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite5(); addCost5(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite5" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite5() {
+                            var ID1 = parseInt(document.getElementById("Item5").value);
+                            var bite = 2;
+                            document.getElementById("bite5").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc5" style="text-align: center">
+                    <script>
+                        function addCost5() {
+                            var ID1 = parseFloat(document.getElementById("Item5").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc5").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord6">Gourmet Brioche Slider - Wagyu Beef Burger with Cheese, Lettuce, Tomato & Relish (H)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item6" name="Item6" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite6(); addCost6(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite6" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite6() {
+                            var ID1 = parseInt(document.getElementById("Item6").value);
+                            var bite = 2;
+                            document.getElementById("bite6").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc6" style="text-align: center">
+                    <script>
+                        function addCost6() {
+                            var ID1 = parseFloat(document.getElementById("Item6").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc6").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord7">Gourmet Brioche Slider - Crispy Panko Crumbed Chicken Schnitzel with Tomato, Lettuce & Sweet Chilli Mayo</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item7" name="Item7" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite7(); addCost7(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite7" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite7() {
+                            var ID1 = parseInt(document.getElementById("Item7").value);
+                            var bite = 2;
+                            document.getElementById("bite7").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc7" style="text-align: center">
+                    <script>
+                        function addCost7() {
+                            var ID1 = parseFloat(document.getElementById("Item7").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc7").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord8">Gourmet Brioche Slider - Veggie Burger with Lettuce, Tomato & Relish (V)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item8" name="Item8" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite8(); addCost8(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite8" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite8() {
+                            var ID1 = parseInt(document.getElementById("Item8").value);
+                            var bite = 2;
+                            document.getElementById("bite8").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc8" style="text-align: center">
+                    <script>
+                        function addCost8() {
+                            var ID1 = parseFloat(document.getElementById("Item8").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc8").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord9">Gourmet Gluten-Free Slider - Smoky Tennessee Bourbon Pulled Pork with Creamy Slaw (GF)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item9" name="Item9" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite9(); addCost9(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite9" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite9() {
+                            var ID1 = parseInt(document.getElementById("Item9").value);
+                            var bite = 2;
+                            document.getElementById("bite9").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc9" style="text-align: center">
+                    <script>
+                        function addCost9() {
+                            var ID1 = parseFloat(document.getElementById("Item9").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc9").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord10">Gourmet Gluten-Free Slider - Wagyu Beef Burger with Cheese, Lettuce, Tomato & Relish (GF/H)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item10" name="Item10" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite10(); addCost10(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite10" style="background-color: lightskyblue; text-align: center ">
+                    <script>
+                        function addBite10() {
+                            var ID1 = parseInt(document.getElementById("Item10").value);
+                            var bite = 2;
+                            document.getElementById("bite10").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc10" style="text-align: center">
+                    <script>
+                        function addCost10() {
+                            var ID1 = parseFloat(document.getElementById("Item10").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc10").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord11">Gourmet Gluten-Free Slider - Grilled Chicken with Tomato, Lettuce & Sweet Chilli Mayo (GF)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item11" name="Item11" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite11(); addCost11(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite11" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite11() {
+                            var ID1 = parseInt(document.getElementById("Item11").value);
+                            var bite = 2;
+                            document.getElementById("bite11").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc11" style="text-align: center">
+                    <script>
+                        function addCost11() {
+                            var ID1 = parseFloat(document.getElementById("Item11").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc11").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            <tr>
+                <td id="Ord12">Gourmet Gluten-Free Slider - Veggie Burger with Lettuce, Tomato & Relish (GF/V)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item12" name="Item12" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite12(); addCost12(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite12" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite12() {
+                            var ID1 = parseInt(document.getElementById("Item12").value);
+                            var bite = 2;
+                            document.getElementById("bite12").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc12" style="text-align: center">
+                    <script>
+                        function addCost12() {
+                            var ID1 = parseFloat(document.getElementById("Item12").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc12").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td id="Ord13">Gourmet Slider - Veggie Burger with Lettuce, Tomato & Relish (VEGAN)</td>
+                <td style="text-align: center">&#36 7.50</td>
+                <td><input type="number" id="Item13" name="Item13" style="text-align: center; width: 100%; font-size: 15px; font-family: Calibri;" value="" onChange="addBite13(); addCost13(); summary();" min="20" oninput="validity.valid||(value='');"></td>
+                <td id="bite13" style="background-color: lightskyblue; text-align: center">
+                    <script>
+                        function addBite13() {
+                            var ID1 = parseInt(document.getElementById("Item13").value);
+                            var bite = 2;
+                            document.getElementById("bite13").innerHTML = ID1 * bite;
+                        }
+                    </script>
+                </td>
+                <td id="calc13" style="text-align: center">
+                    <script>
+                        function addCost13() {
+                            var ID1 = parseFloat(document.getElementById("Item13").value);
+                            var cost = 7.50;
+                            var tot = ID1 * cost;
+                            let n = tot.toFixed(2);
+                            document.getElementById("calc13").innerHTML = "$ " + n;
+                        }
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Pastries & Pizza</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>From The Grill</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Arancini, Meatballs & Falafel</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Crumbed to Perfection</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Bite-Sized Delights</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Rice Paper Rolls (minimum 30 combined)</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Sushi (minimum 10 long rolls combined)</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Sandwiches / Baguettes / Wraps / Small Croissants / Small Bagels (minimum 5 of each)</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Sweet Items</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Grazing Boxes</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Gourmet Guru Hire</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgrey"><b>Gourmet Guru Staff</b></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+                <td style="background-color: lightgrey"></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="summary">
+        <h2>SUMMARY OF ORDER:</h2>
+        <p>You have ordered the following items:</p> <br>
+        <p id="con1"></p>
+        <p id="con2"></p>
+        <p id="con3"></p>
+        <p id="con4"></p>
+        <p id="con5"></p>
+        <p id="con6"></p>
+        <p id="con7"></p>
+        <p id="con8"></p>
+        <p id="con9"></p>
+        <p id="con10"></p>
+        <p id="con11"></p>
+        <p id="con12"></p>
+        <p id="con13"></p>
+
+        <p>
+            <script>
+                function summary() {
+                    var x1 = parseInt(document.getElementById("Item1").value);
+                    var x2 = parseInt(document.getElementById("Item2").value);
+                    var x3 = parseInt(document.getElementById("Item3").value);
+                    var x4 = parseInt(document.getElementById("Item4").value);
+                    var x5 = parseInt(document.getElementById("Item5").value);
+                    var x6 = parseInt(document.getElementById("Item6").value);
+                    var x7 = parseInt(document.getElementById("Item7").value);
+                    var x8 = parseInt(document.getElementById("Item8").value);
+                    var x9 = parseInt(document.getElementById("Item9").value);
+                    var x10 = parseInt(document.getElementById("Item10").value);
+                    var x11 = parseInt(document.getElementById("Item11").value);
+                    var x12 = parseInt(document.getElementById("Item12").value);
+                    var x13 = parseInt(document.getElementById("Item13").value);
+                    
+
+                    if (x1 > 1) {
+                        var z = document.getElementById("con1");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item1").value;
+                        var y2 = document.getElementById("Ord1").outerHTML;
+                        document.getElementById("con1").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con1");
+                        z.style.display = "none";
+                    }
+
+                    if (x2 > 1) {
+                        var z = document.getElementById("con2");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item2").value;
+                        var y2 = document.getElementById("Ord2").outerHTML;
+                        document.getElementById("con2").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con2");
+                        z.style.display = "none";
+                    }
+                    if (x3 > 1) {
+                        var z = document.getElementById("con3");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item3").value;
+                        var y2 = document.getElementById("Ord3").outerHTML;
+                        document.getElementById("con3").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con3");
+                        z.style.display = "none";
+                    }
+                    if (x4 > 1) {
+                        var z = document.getElementById("con4");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item4").value;
+                        var y2 = document.getElementById("Ord4").outerHTML;
+                        document.getElementById("con4").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con4");
+                        z.style.display = "none";
+                    }
+                    if (x5 > 1) {
+                        var z = document.getElementById("con5");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item5").value;
+                        var y2 = document.getElementById("Ord5").outerHTML;
+                        document.getElementById("con5").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con5");
+                        z.style.display = "none";
+                    }
+                    if (x6 > 1) {
+                        var z = document.getElementById("con6");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item6").value;
+                        var y2 = document.getElementById("Ord6").outerHTML;
+                        document.getElementById("con6").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con6");
+                        z.style.display = "none";
+                    }
+                    if (x7 > 1) {
+                        var z = document.getElementById("con7");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item7").value;
+                        var y2 = document.getElementById("Ord7").outerHTML;
+                        document.getElementById("con7").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con7");
+                        z.style.display = "none";
+                    }
+                    if (x8 > 1) {
+                        var z = document.getElementById("con8");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item8").value;
+                        var y2 = document.getElementById("Ord8").outerHTML;
+                        document.getElementById("con8").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con8");
+                        z.style.display = "none";
+                    }
+                    if (x9 > 1) {
+                        var z = document.getElementById("con9");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item9").value;
+                        var y2 = document.getElementById("Ord9").outerHTML;
+                        document.getElementById("con9").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con9");
+                        z.style.display = "none";
+                    }
+                    if (x10 > 1) {
+                        var z = document.getElementById("con10");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item10").value;
+                        var y2 = document.getElementById("Ord10").outerHTML;
+                        document.getElementById("con1").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con10");
+                        z.style.display = "none";
+                    }
+                    if (x11 > 1) {
+                        var z = document.getElementById("con11");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item11").value;
+                        var y2 = document.getElementById("Ord11").outerHTML;
+                        document.getElementById("con11").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con11");
+                        z.style.display = "none";
+                    }
+                    if (x12 > 1) {
+                        var z = document.getElementById("con12");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item12").value;
+                        var y2 = document.getElementById("Ord12").outerHTML;
+                        document.getElementById("con12").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con12");
+                        z.style.display = "none";
+                    }
+                    if (x13 > 1) {
+                        var z = document.getElementById("con13");
+                        z.style.display = "block";
+                        var y1 = document.getElementById("Item13").value;
+                        var y2 = document.getElementById("Ord13").outerHTML;
+                        document.getElementById("con13").innerHTML = y1 + " x " + y2;
+                    }
+                    else {
+                        var z = document.getElementById("con13");
+                        z.style.display = "none";
+                    }
+                    /*var ID1 = parseInt(document.getElementById("Ord1").value); */
+
+                }
+            </script>
+
+        </p>
+
+        <br><p>If this order is incorrect, please look above to change the ordered items.</p>
+        <p>To complete this order, press send.</p>
+        <button>SEND</button>
+    </div>
+
+    <div class="footer">
+        <h4>Last updated on: 1/02/2023</h4>
+    </div>
+</body>
+</html>
