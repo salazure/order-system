@@ -54,6 +54,27 @@
         }
     }
 
+    .prodth {
+        width: 10%; 
+        background-color: lightsteelblue; 
+        font-size: 20px;
+    }
+
+    .proditm {
+        background-color: lightsteelblue; 
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .prodth {
+            font-size: 15px;
+        }
+        .proditm {
+            font-size: 15px;
+        }
+        
+    }
+
     .instructions {
         padding: 20px;
         font-size: 18px;
@@ -3136,11 +3157,11 @@
                 <!--the fieldset was supposed to disable user input when item counter reached 12 but had too many limitations to properly work-->
                 <table class="producttable">
                     <tr>
-                        <th style="background-color: lightsteelblue; font-size: 20px;">ITEMS</th>
-                        <th style="width: 10%; background-color: lightsteelblue; font-size: 20px;">COST PER PIECE</th>
-                        <th style="width: 10%; background-color: lightsteelblue; font-size: 20px;">AMOUNT REQUIRED</th>
-                        <th style="width: 10%; background-color: lightsteelblue; font-size: 20px;">TOTAL BITES</th>
-                        <th style="width: 10%; background-color: lightsteelblue; font-size: 20px;">TOTAL COST</th>
+                        <th class="proditm">ITEMS</th>
+                        <th class="prodth">COST PER PIECE</th>
+                        <th class="prodth">AMOUNT REQUIRED</th>
+                        <th class="prodth">TOTAL BITES</th>
+                        <th class="prodth">TOTAL COST</th>
                     </tr>
                     <tr>
                         <td style="background-color: lightgrey" colspan="5"><b>Gourmet Bao Buns</b></td>
