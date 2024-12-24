@@ -48,33 +48,6 @@
         }
     }
 
-    @media screen and (max-width: 500px) {
-        .container {
-            height: 600px;
-        }
-    }
-
-    .prodth {
-        width: 10%; 
-        background-color: lightsteelblue; 
-        font-size: 20px;
-    }
-
-    .proditm {
-        background-color: lightsteelblue; 
-        font-size: 20px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .prodth {
-            font-size: 15px;
-        }
-        .proditm {
-            font-size: 15px;
-        }
-        
-    }
-
     .instructions {
         padding: 20px;
         font-size: 18px;
@@ -194,6 +167,36 @@
         border-radius: 0;
         border: 1px solid #1a1a1a;
     }
+
+    .prodth {
+        width: 10%; 
+        background-color: lightsteelblue; 
+        font-size: 20px;
+    }
+
+    .proditm {
+        background-color: lightsteelblue; 
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .prodth {
+            font-size: 15px;
+        }
+        .proditm {
+            font-size: 15px;
+        }
+        th, td {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .container {
+            height: 650px;
+        }
+    }
+
+
 </style>
 </head>
 <body onload="setFocus(); disableAllInput(); getDate">
@@ -3155,7 +3158,7 @@
                 </tr>
             </table>
                 <!--the fieldset was supposed to disable user input when item counter reached 12 but had too many limitations to properly work-->
-                <table class="producttable">
+                <table class="producttable" style="width: 100%">
                     <tr>
                         <th class="proditm">ITEMS</th>
                         <th class="prodth">COST PER PIECE</th>
