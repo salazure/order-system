@@ -12,47 +12,72 @@
     body {
         font-family: Calibri;
         font-size: 15px;
-        margin: 5px;
+        margin: 1%;
     }
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
+
+    table {
+        width: 100%;
     }
+
+    .producttable {
+        border: 1px solid;
+    }
+
+    .clearfix {
+        width: 100%;
+    }
+
     .container {
         margin: 10px;
         float: left;
         width: 32%;
         padding: 20px;
+        height: 550px;
+        margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 1550px) {
+        form {
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .container {
+            height: 600px;
+        }
+    }
+
     .instructions {
         padding: 20px;
-        font-size: 20px;
+        font-size: 18px;
         border: 3px solid #1a1a1a;
         font-family: Calibri;
         float: left;
-        margin: 20px;
-        height: 480px;
         width: 100%;
+        height: 100%;
     }
     .collectionInfo {
         text-align: left;
         font-family: Calibri;
-        margin: 20px;
         border: 3px solid #1a1a1a;
         padding: 20px;
-        height: 480px;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
+        height: 100%;
     }
     .legend {
         padding: 20px;
-        font-size: 20px;
+        font-size: 18px;
         border: 3px solid #1a1a1a;
         font-family: Calibri;
-        margin: 20px;
-        height: 480px;
         width: 100%;
+        height: 100%;
     }
     .display {
         text-align: left;
@@ -84,6 +109,11 @@
         font-size: 20px;
         text-align: left;
         padding: 20px;
+        background-color: lightsteelblue;
+        width: 50%;
+    }
+    .summarytable {
+        width: 100%;
     }
     .button {
         border: none;
@@ -267,7 +297,7 @@
             <!--<div class="container">
             <img src="https://img1.wsimg.com/isteam/ip/fa8c0585-fd58-4f28-bed1-c0a551696a9a/logo/b0ba788b-ce69-4e9d-b6e4-46b71777f7de.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95" alt="Gourmet Guru Catering Logo" style="width: 80%;">
         </div> -->
-            <div class="container" style="height: 460px;">
+            <div class="container">
                 <object class="instructions">
                     <table style="width: 100%; height: 100%">
                         <tr>
@@ -286,8 +316,8 @@
                     </table>
                 </object>
             </div>
-            <div class="container" style="height: 460px;">
-                <div class="collectionInfo" id="colorDivDisplay" style="height: 480px;">
+            <div class="container">
+                <div class="collectionInfo" id="colorDivDisplay">
                     <!-- Honeypot -->
                     <input type="text" name="_honey" style="display: none;">
                     <!-- Disable Captcha -->
@@ -387,7 +417,7 @@
                     </table>
                 </div>
             </div>
-            <div class="container" style="height: 460px;">
+            <div class="container">
                 <div class="legend">
                     <table style="width: 100%; height: 100%">
                         <tr>
@@ -439,7 +469,6 @@
                 </div>
             </div>
         </div>
-        <br /> <br /> <br />
 
         <script>
             
@@ -3103,9 +3132,8 @@
                     <td style="width: 115px;"><input type="number" id="numberGuest" style="text-align: center; font-size: 15px; font-family: Calibri; width: 100px;" min="1" oninput="validity.valid||(value=''); guestInvalid(); runVal10();" required onchange="biteUpdate();" class="guestEnter" />                    </td>
                 </tr>
             </table>
-            <fieldset id="fieldDisable">
                 <!--the fieldset was supposed to disable user input when item counter reached 12 but had too many limitations to properly work-->
-                <table style="width: 100%">
+                <table class="producttable">
                     <tr>
                         <th style="background-color: lightsteelblue; font-size: 20px;">ITEMS</th>
                         <th style="width: 100px; background-color: lightsteelblue; font-size: 20px;">COST PER PIECE</th>
@@ -4693,7 +4721,6 @@
                         <td id="bitesPerPerson" style="text-align: center; font-size: 15px;">0</td>
                     </tr>
                 </table>
-            </fieldset>
         </div>
         <p style="font-size: 25px; display: none; color: darkred; background-color: lightcoral; text-align: center " id="errorOver"><b>Maximum of 12 items reached <br> For further assistance, please email info@gourmetguru.com.au</b></p>
 
@@ -4960,14 +4987,14 @@
         <p id="orderBold" class="hid">Order:</p>
 
         <div class="summary">
-            <table style="background-color: white; width: 100%">
+            <table class="summarytable">
                 <tr style="background-color: lightcyan;">
-                    <td class="summaryHeading" style="background-color: lightsteelblue; width: 50%"><b>ORDER SUMMARY</b></td>
-                    <td class="summaryHeading" style="background-color: lightsteelblue; width: 50%"><b>ADDITIONAL INFORMATION</b></td>
+                    <td class="summaryHeading"><b>ORDER SUMMARY</b></td>
+                    <td class="summaryHeading"><b>ADDITIONAL INFORMATION</b></td>
                 </tr>
                 <tr style="background-color: lightgrey;">
                     <td><b>You have ordered the following items:</b></td>
-                    <td><b>Please enter any additional information you'd like to add in the box below</b></td>
+                    <td><b>Please enter any additional information relevant to your order in the box below</b></td>
                 </tr>
                 <tr style="background-color: white;">
                     <td>
@@ -5069,8 +5096,8 @@
 
                         <strong id="ultCost" style="font-size: 15px"></strong>
                     </td>
-                    <td valign="top">
-                        <textarea id="note" rows="10" cols="50" onchange="runinvalid();" style="display: block; margin-left: auto; margin-right: auto; margin-top: 5px; font-family: Calibri; font-size: 15px"></textarea>
+                    <td>
+                        <textarea id="note" rows="10" cols="120" onchange="runinvalid();" style="width: 100%; resize: none; font-size: 15px"></textarea>
                     </td>
                 </tr>
             </table>
