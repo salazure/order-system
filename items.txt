@@ -112,6 +112,6 @@ Gourmet Guru Extras - Quality Sugarcane Knives & Forks (Pack of 50):						 10.00
 Gourmet Guru Extras - Take Home Container (for leftovers) (minimum 30):						 1.00:0:30
 Gourmet Guru Staff (subject to availability):                                                                    HEADING:HEADING:HEADING
 Gourmet Guru Wait Staff (minimum 3 hours/per wait staff):                                                        180.00:0:0
-Gourmet Guru Wait Staff Extra Hours (applies to all wait staff requested):                                       60.00:0:0
+Gourmet Guru Wait Staff Extra Hours (applies to all wait staff requested):                                       60.00:0:wdep
 Gourmet Guru Bar Staff (minimum 3 hours/per wait staff):                                                         180.00:0:0
-Gourmet Guru Bar Staff Extra Hours (applies to all wait staff requested):                                        60.00:0:0
+Gourmet Guru Bar Staff Extra Hours (applies to all wait staff requested):                                        60.00:0:bdep
