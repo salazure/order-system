@@ -1,4 +1,4 @@
-Gourmet Bao Buns:                                                                                                HEADING:HEADING:HEADING
+Gourmet Bao Buns (minimum 20):                                                                                   HEADING:HEADING:HEADING
 Gourmet Bao - Karaage Crispy Chicken with Asian Slaw & Sweet Mayo Drizzle:                                       8.00:4:20
 Gourmet Bao - Peking Duck with Spring Onion, Cucumber & Hoisin Sauce:                                            8.00:4:20
 Gourmet Bao - Spicy Korean Beef Brisket with Asian Slaw, Crispy Shallots & Mayo:				 8.00:4:20
@@ -19,7 +19,7 @@ Gourmet Gluten-Free Slider - Veggie Burger with Lettuce, Tomato & Relish (GF/V):
 Gourmet Vegan Slider - Veggie Burger with Lettuce, Tomato & Relish (V/VEGAN):					 8.00:3:20
 Gourmet Sandwiches:                                                            					 HEADING:HEADING:HEADING
 Gourmet Sandwiches - Assorted Fillings:                                                                          12.00:8:20
-Pastries & Pizza:                                                            					 HEADING:HEADING:HEADING
+Pastries & Pizza (minimum 20):                                                					 HEADING:HEADING:HEADING
 Signature Caramelised Onion & Feta Cheese Tart (V):                                                              6.00:2:20
 Mini Quiche Lorraine (H):                                                                                        6.00:2:20
 Roast Pumpkin, Oregano & Goat’s Cheese Tart (V/H):                                                               6.00:2:20
@@ -32,23 +32,23 @@ Tomato, Mozzarella & Fresh Basil Mini Pizza (V/H):                              
 Pepperoni & Mozzarella Mini Pizza (H):                                                              		 6.00:2:20
 South American Pulled Beef & Olive Empanada with Salsa (H):                                                      6.00:2:20
 Mexican Black Bean & Corn Empanada with Salsa (V/H):                                                             6.00:2:20
-From The Grill:                                                            					 HEADING:HEADING:HEADING
+From The Grill (minimum 20):                                                   					 HEADING:HEADING:HEADING
 Indonesian-Style Chicken Satay Skewer with Spicy Peanut Dipping Sauce (GF/N/H):                                  7.00:3:20
 Za’atar Marinated Vegetable Skewer with Romesco Sauce (GF/V/VEGAN/N/H):                                          7.00:3:20
-Arancini:                                                            					 	 HEADING:HEADING:HEADING
+Arancini (minimum 20):                                                 					 	 HEADING:HEADING:HEADING
 Fire-Roasted Red Pepper & Provolone Arancini with Garlic Aioli (V/H):                                            6.00:2:20
 Porcini Mushroom Arancini with Garlic Aioli (V/H):                                                     		 6.00:2:20
-Meatballs and Falafel:                                                            				 HEADING:HEADING:HEADING
+Meatballs and Falafel (minimum 20):                                                   				 HEADING:HEADING:HEADING
 Spicy Thai Chicken Ball with Sweet Chilli & Coriander (H):                                                       6.00:1:20
 Beef Popette with Tomato Sugo & Parmesan (H):                                                      		 6.00:1:20
 Homemade Falafel Ball with Hommus (GF/V/VEGAN):                                                      		 6.00:2:20
-Crumbed to Perfection:                                                            				 HEADING:HEADING:HEADING
+Crumbed to Perfection (minimum 20):                                                    				 HEADING:HEADING:HEADING
 Panko Crumbed Chicken Strip with Honey Mustard Mayonnaise Dipping Sauce (H):                                     6.00:2:20
 American Mac & Cheese Croquette with Jalapeno Salsa (V/H):                                                       6.00:2:20
 Mediterranean Vegetable Lasagne Bite with Sugo di Pomodoro Sauce (V/H):                                          6.00:2:20
 Tempura Fish Bite with Homemade Caper & Dill Sauce (H):                                                          6.00:2:20
 GOURMET DELUXE - Rosemary Crumbed Lamb Cutlet with Minted Yoghurt (H):                                           12.00:3:20
-Bite-Sized Delights:                                                            				 HEADING:HEADING:HEADING
+Bite-Sized Delights (minimum 20):                                                     				 HEADING:HEADING:HEADING
 Savoury Mini Pancake topped with Lime & Caper Infused Creme Fraiche & Smoked Salmon Rosette:                     6.00:1:20
 Mini Potato Rosti topped with Creme Fraiche, Chives & Roasted Capsicum (V):                                      6.00:1:20
 Mini Potato Rosti topped with Rare Roast Beef & Horseradish Cream:                                               6.00:1:20
@@ -72,7 +72,7 @@ Seaweed Wrapped White Rice Sushi (Maki) - Long Roll Cut into 8 Pieces - Smoked S
 Seaweed Wrapped White Rice Sushi (Maki) - Long Roll Cut into 8 Pieces - Vegetarian (GF/V/VEGAN):                 18.00:8:sushi
 Seaweed Wrapped White Rice Sushi (Maki) - Long Roll Cut into 8 Pieces - Wakame (GF/V/VEGAN):                     18.00:8:sushi
 Seaweed Wrapped White Rice Sushi (Maki) - Long Roll Cut into 8 Pieces - Avocado & Cucumber (GF/V/VEGAN):         18.00:8:sushi
-Sweet Items:                                                            					 HEADING:HEADING:HEADING
+Sweet Items (minimum 20):                                                     					 HEADING:HEADING:HEADING
 Fluffy Buttermilk Scone Halved & Topped with Raspberry Jam & Whipped Cream (two halves) (V):                     6.00:4:20
 Decadent Fudgie Belgian Chocolate Brownie with Whipped Cream (GF/V):                            		 6.00:4:20
 White Chocolate & Raspberry Blondie with Whipped Cream (GF/V):                      			         6.00:4:20
