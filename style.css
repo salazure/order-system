@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Calibri;
+    font-size: 15px;
+    margin: 1%;
+}
+
+table {
+    width: 100%;
+}
+
+.radioinput {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.producttable {
+    width: 100%;
+    border: 1px solid;
+}
+
+.clearfix {
+    width: 100%;
+}
+
+.itemheading {
+    background-color: lightgrey;
+}
+
+.JBite1 {
+    background-color:orchid;
+    text-align: center;
+}
+
+.JBite2 {
+    background-color:yellow;
+    text-align: center;
+}
+
+.JBite3 {
+    background-color:lightseagreen;
+    text-align: center;
+}
+
+.JBite4 {
+    background-color:lightskyblue;
+    text-align: center;
+}
+
+.JBite8 {
+    background-color:peachpuff;
+    text-align: center;
+}
+
+.limit0 {
+    background-color:transparent;
+}
+
+.limit3 {
+    background-color:transparent;
+}
+
+.limit20 {
+    background-color:transparent;
+}
+
+.limitrice {
+    background-color:transparent;
+}
+
+.limitsushi {
+    background-color:transparent;
+}
+
+.inputentry {
+    text-align: center; 
+    width: 100%; 
+    font-size: 15px; 
+    font-family: Calibri;
+}
+
+.container {
+    margin: 10px;
+    float: left;
+    width: 32%;
+    padding: 20px;
+    height: 550px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1550px) {
+    form {
+        align-items: center;
+    }
+    .container {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+.instructions {
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid #1a1a1a;
+    font-family: Calibri;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.collectionInfo {
+    text-align: left;
+    font-family: Calibri;
+    border: 3px solid #1a1a1a;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+}
+.legend {
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid #1a1a1a;
+    font-family: Calibri;
+    width: 100%;
+    height: 100%;
+}
+.display {
+    text-align: left;
+    margin: 20px;
+}
+th, td {
+    padding: 5px;
+}
+tr {
+    border-bottom: 1px solid #1a1a1a;
+}
+tr:hover {
+    background-color: #D6EEEE;
+}
+th {
+    text-align: center;
+}
+.summary {
+    padding: 15px;
+    text-align: left;
+}
+.hid {
+    display: none;
+}
+.con {
+    display: none;
+}
+.summaryHeading {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: lightsteelblue;
+    width: 50%;
+}
+.summarytable {
+    width: 100%;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.unable {
+    border: none;
+    color: grey;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+ }
+.ind {
+    display: none;
+}
+.activeCon {
+    display: block;
+}
+.fin {
+    display: none;
+}
+.invHid {
+    display: none;
+}
+input:valid {
+    background-color: lightgreen;
+    border-radius: 0;
+    border: 1px solid #1a1a1a;
+}
+input:invalid {
+    background-color: lightcoral;
+    border-radius: 0;
+    border: 1px solid #1a1a1a;
+}
+
+.prodth {
+    width: 10%; 
+    background-color: lightsteelblue; 
+    font-size: 20px;
+}
+
+.proditm {
+    background-color: lightsteelblue; 
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .prodth {
+        font-size: 10px;
+    }
+    .proditm {
+        font-size: 10px;
+    }
+    .producttable td {
+        padding: 0px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    .container {
+        height: 650px;
+    }
+}
+
+
+.error {
+    background-color: lightcoral;
+}
+
+.success {
+    background-color: lightgreen;
+}

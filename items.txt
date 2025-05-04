@@ -5,7 +5,7 @@ Gourmet Bao - Spicy Korean Beef Brisket with Asian Slaw, Crispy Shallots & Mayo:
 Gourmet Bao - Tempura Prawn with Asian Slaw & Wasabi Mayo Drizzle:						 8.00:4:20
 Gourmet Bao - Sticky Thai Eggplant with Pickled Carrot, Red Onion, Coriander & Crispy Shallots (V):		 8.00:4:20
 Gourmet Bao - Marinated Tofu with Asian Slaw & Plum Sauce (V/VEGAN):						 8.00:4:20
-Gourmet Brioche Sliders:                                                                                         HEADING:HEADING:HEADING
+Gourmet Brioche Sliders (minimum 20):                                                                            HEADING:HEADING:HEADING
 Gourmet Brioche Slider - Smoky Tennessee Bourbon Pulled Pork with Creamy Slaw:					 8.00:3:20
 Gourmet Brioche Slider - Wagyu Beef Burger with Cheese, Lettuce, Tomato & Relish (H):				 8.00:3:20
 Gourmet Brioche Slider - Crispy Panko-Crumbed Chicken Schnitzel with Tomato, Lettuce & Sweet Chilli Mayo:	 8.00:3:20
@@ -17,7 +17,7 @@ Gourmet Gluten-Free Slider - Grilled Chicken with Tomato, Lettuce & Sweet Chilli
 Gourmet Gluten-Free Slider - Marinated Beef Bulgogi with Asian Salad (GF):					 9.00:3:20
 Gourmet Gluten-Free Slider - Veggie Burger with Lettuce, Tomato & Relish (GF/V):			  	 9.00:3:20
 Gourmet Vegan Slider - Veggie Burger with Lettuce, Tomato & Relish (V/VEGAN):					 8.00:3:20
-Gourmet Sandwiches:                                                            					 HEADING:HEADING:HEADING
+Gourmet Sandwiches (minimum 20):                                                            			 HEADING:HEADING:HEADING
 Gourmet Sandwiches - Assorted Fillings:                                                                          12.00:8:20
 Pastries & Pizza (minimum 20):                                                					 HEADING:HEADING:HEADING
 Signature Caramelised Onion & Feta Cheese Tart (V):                                                              6.00:2:20
