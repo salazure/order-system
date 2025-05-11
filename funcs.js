@@ -248,7 +248,7 @@ function GetNumberActiveElements(erroractive) {
 
     if (erroractive) {
         if (activecount == 12) {
-            let error = "\r\nYour order has now reached the maximum of 12 items, but you may still order more from the following categories: \r\n \r\nRice Paper Rolls / Sushi / Grazing Boxes \r\nGourmet Guru Hire / Gourmet Guru Extras / Gourmet Guru Staff \r\n \r\nFor further assistance or special requests, please email info@gourmetguru.com.au";
+            let error = "\r\nYour order has now reached the maximum of 12 items, but you may still order more from the following categories: \r\n \r\nGrazing Boxes / Gourmet Guru Hire \r\nGourmet Guru Extras / Gourmet Guru Staff \r\n \r\nFor further assistance or special requests, please email info@gourmetguru.com.au";
             alert(error);
         }
     }
@@ -330,10 +330,10 @@ function ResultSummaryGen() {
 }
 
 function RetCalcHours(total, ID) {
-    let treatedtotal = parseFloat(total.innerHTML.split(" ")[1]);
+    let treatedtotal = parseFloat(total.innerHTML.split("$")[1]);
     let secondarytotalsrc = document.getElementById("FValue" + (parseInt(ID) + 1).toString());
     if (secondarytotalsrc.innerHTML != "") {
-        let treatedsecondary = parseFloat(secondarytotalsrc.innerHTML.split(" ")[1]);
+        let treatedsecondary = parseFloat(secondarytotalsrc.innerHTML.split("$")[1]);
         return treatedtotal + treatedsecondary;
     }
     return treatedtotal;
@@ -485,11 +485,7 @@ function Verify() {
 
 function GenerateEmail() {
     let emailstr = `Recipient: 
-        \r${document.getElementById("fname").value} ${document.getElementById("lname").value}
-        \r${document.getElementById("address").value}
-        \r${document.getElementById("suburb").value}
-        \r${document.getElementById("email").value}
-        \r${document.getElementById("mobile").value}
+        \r${document.getElementById("fname").value} ${document.getElementById("lname").value}\r${document.getElementById("address").value}\r${document.getElementById("suburb").value}\r${document.getElementById("email").value}\r${document.getElementById("mobile").value}
         \r\nTime/date of delivery:
         \r${document.getElementById("timeDelivery").value} on ${document.getElementById("dateDelivery").value}
         \r\nOrder:
