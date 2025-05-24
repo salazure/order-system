@@ -484,15 +484,18 @@ function Verify() {
 
 
 function GenerateEmail() {
+    let splitdate = document.getElementById("dateDelivery").value.split("-");
     let emailstr = `Recipient: 
         \r${document.getElementById("fname").value} ${document.getElementById("lname").value}\r${document.getElementById("address").value}\r${document.getElementById("suburb").value}\r${document.getElementById("email").value}\r${document.getElementById("mobile").value}
         \r\nTime/date of delivery:
-        \r${document.getElementById("timeDelivery").value} on ${document.getElementById("dateDelivery").value}
+        \r${document.getElementById("timeDelivery").value} on ${splitdate[2]}-${splitdate[1]}-${splitdate[0]}
         \r\nOrder:
         \r${document.getElementById("resultlist").innerHTML.replace(/<br\s*\/?>/gi, "\n").replace(/<\/?b>/gi, "")}
         \r\nNotes:
         \r${document.getElementById("numberGuest").value} x guests (approx.)
         \rType of event is a/an ${document.getElementById("event").value}
         \r${document.getElementById("note").value}`
+
+    emailstr = emailstr.replaceAll("amp;", "");
     return emailstr;
 }
